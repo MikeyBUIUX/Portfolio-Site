@@ -7,6 +7,9 @@ Secondary Color (Light Gray): #e6e7e8;
 Secondary Color (White): #ffffff;
 */
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #ffffff;
@@ -15,6 +18,28 @@ body {
   font-weight: 200;
   line-height: 1.6;
   color: #414042;
+}
+
+header {
+  background-color: #752d2c;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
 }
 
 h1, h2, h3, h4 {
@@ -63,16 +88,22 @@ a:visited { /* visited link */
 
 a:hover,
 a:focus {
-  color: #414042;
+  color: #949598;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
-  color: #949598;
+  color: #414042;
 }
 
 img {
   width: 100%;
+}
+
+footer {
+  background-color: #e6e7e8;
+  text-align: center;
+  padding: 15px 0;
 }
 
 .button {
@@ -101,4 +132,47 @@ img {
 .button.contact:hover {
   background-color: #949598;
   color: #ffffff;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px
+  solid #4a4a4a;
+}
+
+#hero {
+  background-color: #e6e7e8;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.social {
+  max-width: 100px;
 }
