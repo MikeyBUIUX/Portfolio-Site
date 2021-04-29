@@ -23,7 +23,12 @@ body {
 header {
   background-color: #752d2c;
   text-align: center;
-  padding: 15px 0;
+  padding: 25px 0;
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+  position: fixed;
+  width: 100%;
 }
 
 nav > ul {
@@ -40,6 +45,22 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+  color: #ffffff;
+}
+
+nav > ul > li > a:hover {
+  color: #949598;
+}
+
+nav > ul > li > a:active {
+  color: #414042;
+}
+
+main {
+  padding-top: 240px;
 }
 
 h1, h2, h3, h4 {
@@ -83,7 +104,7 @@ a {
 }
 
 a:visited { /* visited link */
-  color: #e6e7e8;
+  color: #752d2c;
 }
 
 a:hover,
@@ -171,6 +192,7 @@ footer {
 
 .logo {
   max-width: 250px;
+  text-align: center;
 }
 
 .social {
