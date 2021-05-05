@@ -1,6 +1,7 @@
 /*
 Colors used:
 Primary Color (Red): #752d2c;
+Primary Color (Hover): #d59190
 Primary Color (Dark Gray): #414042;
 Secondary Color (Medium Gray): #949598;
 Secondary Color (Light Gray): #e6e7e8;
@@ -44,15 +45,15 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
-}
-
-nav > ul > li > a:visited {
   color: #ffffff;
 }
 
-nav > ul > li > a:hover {
+nav > ul > li > a:visited {
   color: #949598;
+}
+
+nav > ul > li > a:hover {
+  color: #d59190;
 }
 
 nav > ul > li > a:active {
@@ -60,7 +61,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 240px;
+  padding-top: 220px;
 }
 
 h1, h2, h3, h4 {
@@ -104,17 +105,17 @@ a {
 }
 
 a:visited { /* visited link */
-  color: #949598;
+  color: #e6e7e8;
 }
 
 a:hover,
 a:focus {
-  color: #949598;
+  color: #d59190;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
-  color: #414042;
+  color: #949598;
 }
 
 img {
@@ -142,6 +143,12 @@ footer {
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.button:visited {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  color: #949598;
 }
 
 .button1 {
@@ -190,7 +197,7 @@ footer {
 
 #hero {
   background-color: #e6e7e8;
-  padding: 20px 0;
+  padding: 40px 0 40px 0;
   display: inline-block;
   width: 100%;
 }
@@ -199,8 +206,13 @@ footer {
   text-align: center;
 }
 
+#about {
+  padding: 80px 0 0 0;
+}
+
 .center {
   text-align: center;
+  padding-top: 10px;
 }
 
 .left {
@@ -262,6 +274,7 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -274,7 +287,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 160px;
+    padding-top: 170px;
   }
 
   body {
@@ -286,6 +299,17 @@ Medium devices (640px and larger)
     padding: 10px 10px;
     position: fixed;
     width: 100%;
+  }
+
+  #hero {
+    background-color: #e6e7e8;
+    padding: 0px 0 40px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #about {
+    padding: 20px 0 0 0;
   }
 
   .col-md-6 {
@@ -306,11 +330,12 @@ Medium devices (640px and larger)
 #about h3 {
   margin-top: 0;
 }
-
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
   .col-lg-7 {
     width: 60%;
   }
@@ -318,7 +343,6 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 40%;
   }
-}
 
 header {
   text-align: unset;
@@ -337,6 +361,8 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
 }
 
 /* ==============================
