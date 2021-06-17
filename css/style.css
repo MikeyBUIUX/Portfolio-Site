@@ -115,7 +115,7 @@ a:focus {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-a:active { /* selected link */
+a:active { /* pressed/selected link */
   color: #949598;
 }
 
@@ -132,7 +132,7 @@ footer {
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #752d2c;
-  color: white; /* needed to override the default link color */
+  color: #fff; /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
@@ -154,14 +154,14 @@ footer {
 
 .button1 {
   display: inline-block;
-  background-color: #e6e7e8;
-  color: #752d2c;
+  background-color: #752d2c;
+  color: #e6e7e8;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   text-transform: uppercase;
-  border: 2px solid #752d2c;
+  border: 4px solid #752d2c;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
