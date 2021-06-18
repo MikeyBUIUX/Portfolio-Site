@@ -184,6 +184,12 @@ footer {
   overflow: auto;
 }
 
+.rowcenter {
+  text-align: center;
+  margin: 25px;
+  overflow: auto;
+}
+
 .column {
   float: left;
   width: 50%;
@@ -226,7 +232,7 @@ footer {
 }
 
 .social {
-  max-width: 100px;
+  max-width: 60px;
 }
 
 @keyframes color-change {
@@ -297,6 +303,12 @@ footer {
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+}
+
+.col-md-6 ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 /* ==============================
