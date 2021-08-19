@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Atlanta, GA-based UI Designer Michael Bradley | Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/701feed8e6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-83MFV1PTVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-83MFV1PTVN');
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img class="logo" src="img/mb_logo.svg" alt="bradleyuidesign_logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" onclick="menuToggle ()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle ()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header-->
+
+    <main id="main-projects">
+        <!-- Work -->
+        <div id="work">
+            <div class="container">
+                <h1 class="center">Projects</h1>
+                <p>The completed websites on this page are merely <strong>coding exercises</strong>, to help reinforce
+                    my
+                    knowledge of
+                    HTML5, CSS3 and
+                    responsive build techniques. While they were not built using a "mobile-first" method, they do
+                    include the
+                    use of CSS Flex Box and CSS Grids, root variables, Sass and
+                    Javascript.</p>
+                <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <picture>
+                            <source srcset="img/udemy/hotel@1x.png" media="(max-width:767px)">
+                            <img src="img/udemy/hotel@2x.png" alt="Hotel Website">
+                        </picture>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3 class="left color-gray-one">Hotel Website</h3>
+                        <h4>Topic: HTML & CSS</h4>
+                        <p class="left">
+                            This small, 3 page website uses plain ol' DIVs and floats for positioning. I utilized
+                            VS Code as my editor, along with the Live Server plug-in to render the pages.
+                        </p>
+                        <a href="udemy/hotel_website/index.html" class="button" target="_new">View Project</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <picture>
+                            <source srcset="img/udemy/financial@1x.png" media="(max-width:767px)">
+                            <img src="img/udemy/financial@2x.png" alt="Financial Website">
+                        </picture>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3 class="left color-gray-one">Financial Website</h3>
+                        <h4>Topic: Responsive Web Design</h4>
+                        <p class="left">
+                            This build utilizes CSS Flex Box, CSS Transitions, Fontawesome fonts an integrated lightbox
+                            image viewer.
+                        </p>
+                        <a href="udemy/edgeledger/index.html" class="button" target="_new">View Project</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <picture>
+                            <source srcset="img/udemy/newsgrid@1x.png" media="(max-width:767px)">
+                            <img src="img/udemy/newsgrid@2x.png" alt="News Website">
+                        </picture>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3 class="left color-gray-one">News Website</h3>
+                        <h4>Topic: Responsive Website Design</h4>
+                        <p class="left">
+                            This psuedo news website utilizes CSS Grid for positioning.
+                        </p>
+                        <a href="udemy/newsgrid/index.html" class="button" target="_new">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Work -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="center" id="contact">
+            <!-- Container -->
+            <div class="container color-gray-four">
+                <!--Social Media Layout and Placeholders-->
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/michaelbradley1/" target="_blank"><i
+                            class="fab fa-linkedin fa-3x"></i></a>
+                </div>
+                <p>Copyright &copy; Michael Bradley, 2021</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

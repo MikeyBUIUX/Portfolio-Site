@@ -1,3 +1,14 @@
+:root {
+  --primary-color: #842f39;
+  --secondary-color: #b28a90;
+  --support-color: #8c676c;
+  --accent-one: #f59b34;
+  --gray-one: #2b2b2b;
+  --gray-two: #414042;
+  --gray-three: #58595b;
+  --gray-four: #e6e7e8;
+}
+
 /*
 Colors used:
 Primary Color (Red): #752d2c;
@@ -8,57 +19,19 @@ Secondary Color (Light Gray): #e6e7e8;
 Secondary Color (White): #ffffff;
 */
 
+
+/* Core Styles */
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: #fff;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6;
-  color: #414042;
-}
-
-header {
-  background-color: #752d2c;
-  padding: 15px 10px 10px;
-  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16);
-  -webkit-box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16);
-  position: fixed;
-  width: 100%;
-}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
-  background-color: #752d2c;
-}
-
-nav > ul > li > a:visited {
-  color: #949598;
-}
-
-nav > ul > li > a:hover {
-  color: #d59190;
-}
-
-nav > ul > li > a:active {
-  color: #414042;
-}
-
-main {
-  padding-top: 40px;
+  color: var(--gray-two);
 }
 
 h1,
@@ -70,7 +43,7 @@ h4 {
 
 h1 {
   font-size: 3em;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 h2 {
@@ -79,7 +52,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 500;
 }
 
@@ -97,25 +70,25 @@ ol,
 ul {
   font-size: 1.1em;
   font-weight: 200;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
 }
 
 a {
-  color: #752d2c;
-  text-decoration: none; /* No underlining */
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
-a:visited { /* visited link */
+a:visited { 
   color: #e6e7e8;
 }
 
 a:hover,
 a:focus {
   color: #d59190;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline; 
 }
 
-a:active { /* pressed/selected link */
+a:active { 
   color: #949598;
 }
 
@@ -123,47 +96,96 @@ img {
   width: 100%;
 }
 
-footer {
-  background-color: #e6e7e8;
-  text-align: center;
-  padding: 15px 0;
+
+
+/* Utilities */
+
+.color-primary {
+  color: var(--primary-color);
 }
 
+.color-gray-one {
+  color: var(--gray-one);
+}
+
+.color-gray-four {
+  color: var(--gray-four);
+}
+
+.pad-20 {
+  padding-top: 20px;
+}
+
+.pad-50 {
+  padding-top: 50px;
+}
+
+.pad-80 {
+  padding-top: 80px;
+}
+
+.pad-100 {
+  padding-top: 100px;
+}
+
+.pad-120 {
+  padding-top: 120px;
+}
+
+.back-color {
+  display: block;
+  margin: auto;
+  font-weight: 400;
+  font-size: 2em;
+  color: var(--gray-four);
+  background: var(--primary-color);
+  padding-bottom: 6px;
+  width: 60%;
+  border-radius: 5px;
+}
+
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #752d2c;
-  color: #fff; /* needed to override the default link color */
+  display: inline-block; 
+  background-color: var(--primary-color);
+  color: #fff; 
   font-weight: 700;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30; 
   transition-duration: 0.2s;
   transition-property: opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
   text-decoration: none;
 }
 
 .button:visited {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8; 
   text-decoration: none;
   color: #949598;
 }
 
 .button1 {
   display: inline-block;
-  background-color: #752d2c;
-  color: #e6e7e8;
-  font-weight: 700;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
   text-transform: uppercase;
-  border: 4px solid #752d2c;
   transition-duration: 0.2s;
   transition-property: opacity;
+}
+
+.button2 {
+  display: inline-block;
+  background-color: var(--gray-three);
+  color: var(--gray-four);
+  font-weight: 400;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
 .button1:hover {
@@ -173,8 +195,67 @@ footer {
   color: #fff;
 }
 
-/* Layout styling */
 
+
+
+
+/* Header & Nav Bar */
+header {
+  background-color: var(--primary-color);
+  padding: 15px 10px 10px;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16);
+  position: fixed;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+nav > ul > li > a:visited {
+  color: #949598;
+}
+
+nav > ul > li > a:hover {
+  color: #d59190;
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
+  color: #414042;
+}
+
+main {
+  padding-top: 40px;
+}
+
+#main-projects {
+  padding-top: 100px;
+}
+
+footer {
+  background-color: var(--gray-one);
+  text-align: center;
+  padding: 15px 0;
+}
+
+
+
+
+
+/* Layout styling */
 .container {
   padding: 0 15px;
 }
@@ -186,7 +267,7 @@ footer {
 
 .rowcenter {
   text-align: center;
-  margin: 25px;
+  margin: 15px;
   overflow: auto;
 }
 
@@ -202,18 +283,30 @@ footer {
 }
 
 #hero {
-  background-color: #e6e7e8;
-  padding: 40px 0;
+  background: url('../img/globe2.jpg') no-repeat center center/cover;
+  background-color: var(--gray-one);
+  padding: 90px 0 40px;
   display: inline-block;
   width: 100%;
+
 }
 
 #hero h1 {
   text-align: center;
+  color: var(--primary-color);
+}
+
+#hero h2, h3 {
+  text-align: center;
+  color: #fff;
 }
 
 #about {
-  padding: 80px 0 0;
+  padding-top: 80px;
+}
+
+#projects {
+  padding-top: 110px;
 }
 
 .center {
@@ -221,18 +314,24 @@ footer {
   padding-top: 10px;
 }
 
+.skills {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 40px;
+}
+
 .left {
   text-align: left;
-  margin-top: 0;
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 90px;
   text-align: center;
 }
 
 .social {
   max-width: 60px;
+  margin: auto;
 }
 
 .navtoggle li:not(:last-child) {
@@ -276,6 +375,73 @@ footer {
   margin-bottom: 10px;
 }
 
+.img-width {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+
+/* Contact Page */
+
+.contact {
+  width: 100%;
+  padding: 70px 0 40px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--gray-three);
+  font-family:'Roboto Condensed', sans-serif;
+  font-size: 1em;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--gray-three);
+  font-family:'Roboto Condensed', sans-serif;
+  resize: none;
+  font-size: 1em;
+}
+
+.contact h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.contact p {
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: 200;
+}
+
+.contact label {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.contact .btn {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -291,7 +457,11 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 5px;
+    margin-top: 20px;
+  }
+
+  .left {
+    margin-top: 0;
   }
 
   nav > ul {
@@ -305,13 +475,17 @@ Medium devices (640px and larger)
 
   #hero {
     background-color: #e6e7e8;
-    padding: 20px 0 40px;
+    padding: 50px 0 40px;
     display: inline-block;
     width: 100%;
   }
 
   #about {
     padding: 20px 0 0;
+  }
+
+  #projects {
+    padding-top: 80px;
   }
 
   .col-md-6 {
@@ -357,12 +531,29 @@ Medium devices (640px and larger)
   #about h3 {
     margin-top: 0;
   }
+
+  .contact {
+    width: 80%;
+    margin:auto;
+    padding: 40px 0 40px;
+  }
 }
+
+
+
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  main {
+    padding-top: 120px;
+  }
+
+  #main-projects {
+    padding-top: 130px;
+  }
+  
   .col-lg-7 {
     width: 60%;
   }
@@ -378,7 +569,7 @@ Large devices (1024px or larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 3px;
+    margin-top: 25px;
   }
 
   .logo {
@@ -393,11 +584,22 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-/* ==============================
-X-large devices (1440px or larger)
-=================================
-@media only screen and (min-width: 1440px) {
+  #projects {
+    padding-top: 70px;
+  }
+
+  .contact {
+    padding: 20px 0 40px;
+  }
+
+  .contact label {
+    font-size: 1.1em;
+  }
+
+  .contact {
+    width: 60%;
+    margin:auto;
+  }
+
 }
-*/

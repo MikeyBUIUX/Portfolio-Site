@@ -3,22 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <title>The Recipe Tree App | Atlanta, GA-based UI Designer Michael Bradley</title>
+  <title>Atlanta, GA-based UI Designer Michael Bradley | The Recipe Tree App</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/701feed8e6.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-83MFV1PTVN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-83MFV1PTVN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-83MFV1PTVN');
-</script>
+    gtag('config', 'G-83MFV1PTVN');
+  </script>
 </head>
 
 <body>
@@ -26,12 +29,13 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img class="logo" src="files/logo.svg" alt="bradleyuidesign_logo"></a>
+        <a href="index.html"><img class="logo" src="img/mb_logo.svg" alt="bradleyuidesign_logo"></a>
         <nav>
           <ul>
-            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle ()">Contact</a></li>
+            <li><a href="contact.html" onclick="menuToggle ()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle ()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -44,18 +48,23 @@
 
     <div class="container">
       <div>
-        <div id="about">
+        <div id="projects">
           <picture>
             <source srcset="img/recipe/recipetree@1x.jpg" media="(max-width:767px)">
             <img src="img/recipe/recipetree@2x.jpg" alt="The Recipe Tree Logo">
           </picture>
         </div>
         <div>
-          <h3>The Recipe Tree</h3>
-          <p>The Recipe Tree is an app that is used to gather and store family recipes. Family recipes are often considered heirlooms and are passed down from generation to generation. When you add a family recipe to the app, you give credit to the
+          <h3 class="color-gray-one left pad-20">The Recipe Tree</h3>
+          <p>The Recipe Tree is an app that is used to gather and store family recipes. Family recipes are often
+            considered heirlooms and are passed down from generation to generation. When you add a family recipe to the
+            app, you give credit to the
             person who originated it. This process creates a family genealogy tree.</p>
-          <p>I performed both UX and UI duties on this project. I interviewed test subjects, created personas and a style guide, and incorporated all of this feedback into the functionality of the app. Using a Design Thinking process, I tested my
-            wireframes for usability and A/B tested screens for user preference. I then took all of this feedback and developed the final screens.</p>
+          <p>I performed both UX and UI duties on this project. I interviewed test subjects, created personas and a
+            style guide, and incorporated all of this feedback into the functionality of the app. Using a Design
+            Thinking process, I tested my
+            wireframes for usability and A/B tested screens for user preference. I then took all of this feedback and
+            developed the final screens.</p>
         </div>
         <div>
           <picture>
@@ -72,38 +81,18 @@
   <footer>
     <div class="center" id="contact">
       <!-- Container -->
-      <div class="container">
-        <h2>Get in Touch</h2>
-        <p>If you have a project in mind that you think I'd be perfect for, then please call me at <a href="tel:4043538569">(404) 353-8569</a> and leave a message. You can also contact me via email.</p>
-        <div class="row">
-          <a href="mailto:michaelbradley.uiux@gmail.com" class="button">Email Me</a>
+      <div class="container color-gray-four">
+        <!--Social Media Layout and Placeholders-->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/michaelbradley1/" target="_blank"><i
+              class="fab fa-linkedin fa-3x"></i></a>
         </div>
-
-        <div>
-          <!--Social Media Layout and Placeholders-->
-          <a href="https://www.linkedin.com/in/michaelbradley1/" target="_blank">
-            <svg class="social" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="g5891">
-                <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
-                <g id="shapes">
-                  <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
-                  <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
-                    style="fill:#fff;fill-rule:nonzero;" />
-                  <path
-                    d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                    id="path15" style="fill:#fff;fill-rule:nonzero;" />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-
-        <p>&copy;Copyright Michael Bradley 2021</p>
+        <p>Copyright &copy; Michael Bradley, 2021</p>
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

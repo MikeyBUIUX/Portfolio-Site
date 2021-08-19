@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Atlanta, GA-based UI Designer Michael Bradley | The Savr Money Saving App</title>
+  <title>Atlanta, GA-based UI Designer Michael Bradley | Contact Me</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,27 +48,28 @@
 
     <div class="container">
       <div>
-        <div id="projects">
-          <picture>
-            <source srcset="img/savr/savr@1x.jpg" media="(max-width:767px)">
-            <img src="img/savr/savr@2x.jpg" alt="Savr Logo">
-          </picture>
-        </div>
-        <div>
-          <h3 class="color-gray-one left pad-20">Savr</h3>
-          <p>Savr, The Money Saving App was developed as my last student project for CareerFoundry. The app works just
-            like a “Christmas Club” account, where you can set aside money for purchasing large ticket items like cars
-            or houses.</p>
-        </div>
-        <div>
-          <picture>
-            <source srcset="img/savr/savr_CS@2.png" media="(max-width:767px)">
-            <img src="img/savr/savr_CS@1.png" alt="The Savr Case Study">
-          </picture>
+        <div class="contact">
+          <h1>Contact Me</h1>
+          <p>If you have a project in mind that you think I'd be perfect for, then please call me at (404) 353-8569
+            and leave a message. You can also contact me via this form. I'll do my best top get back to you as soon
+            as possible.</p>
+          <form action="https://www.bradleyuidesign.com/cgi-bin/FormMail.pl" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name" autofocus>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <label for="email">E-mail (Required):</label>
+            <input type="email" id="email" name="email" placeholder="E-mail Address" required>
+            <label for="textarea">Message:</label>
+            <textarea name="message" placeholder="Enter Message"></textarea>
+            <input type="hidden" name="recipient" value="michaelbradley.uiux@gmail.com" />
+            <input type="hidden" name="subject" value="From the contact form" />
+            <input type="hidden" name="redirect" value="https://www.bradleyuidesign.com/success.html" />
+            <input type="submit" value="Submit" class="button">
+          </form>
         </div>
       </div>
     </div>
-
   </main>
 
   <!-- Footer -->

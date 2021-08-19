@@ -3,22 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About Me | Atlanta, GA-based UI Designer Michael Bradley</title>
+  <title>Atlanta, GA-based UI Designer Michael Bradley | About Me</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/701feed8e6.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-83MFV1PTVN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-83MFV1PTVN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-83MFV1PTVN');
-</script>
+    gtag('config', 'G-83MFV1PTVN');
+  </script>
 </head>
 
 <body>
@@ -26,12 +29,13 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img class="logo" src="files/logo.svg" alt="bradleyuidesign_logo"></a>
+        <a href="index.html"><img class="logo" src="img/mb_logo.svg" alt="bradleyuidesign_logo"></a>
         <nav>
           <ul>
-            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle ()">Contact</a></li>
+            <li><a href="contact.html" onclick="menuToggle ()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle ()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -40,102 +44,132 @@
   </header>
   <!-- End of Header-->
 
-  <main>
-
+  <main id="main-projects">
     <div>
-      <!--Whole Block-->
       <div>
-        <!--About Container-->
         <h1 class="center">About</h1>
       </div>
     </div>
-    <!--Whole Block END-->
 
     <div class="container">
-      <!--Whole Block-->
       <div>
-        <!--Container-->
         <picture>
-          <source srcset="img/me/Me@1x.jpg" media="(max-width:767px)">
-          <img src="img/me/Me@2x.jpg" alt="Michael Bradley Photo">
+          <source srcset="img/me/Me@1x.png" media="(max-width:768px)">
+          <img class="img-width" src="img/me/Me@2x.png" alt="Michael Bradley Photo">
         </picture>
 
-        <P class="center"><a href="files/MichaelBradley_UI.pdf" class="button1" target="_blank">Download my resume</a></p>
+        <p class="center"><a href="files/MichaelBradley_UI.pdf" class="button1" target="_blank" download>Download my
+            resume</a></p>
 
         <div>
-          <!--MyStory & Skills Container-->
-          <div>
-            <!--MyStory Column-->
-            <h2 class="center">My Story</h2>
 
-            <p>I was born and raised in Pittsburgh, Pennsylvania. Yes, I'm a Pittsburgh Steelers fan, because when you grow up in Pittsburgh in the 70s, it's the law. I'm a graduate of both The Art Institute of Pittsburgh (Associate's Degree) and The Indiana University of Pennsylvania (Bachelor of Fine Arts). In my spare time you can find me teaching myself how to play guitar, doing concert photography or watching professional football on television.</p>
+          <h2 class="center">My Story</h2>
 
-            <p>I've been a print-based graphic designer most of my career, but several years ago I worked my way into an interface designer position for a company that developed a software package that monitored and controlled satellite communications networks. It was there that I got my first taste of user interface design (more graphics related vs. coding), and I was proud that the work that I did was making a difference for customers as varied as The National Broadcast Company (NBC) and the United States Military. While I did my best and applied everything I knew about graphic design to my work, I was missing one very important piece: understanding the needs of a user.</p>
+          <p>I was born and raised in Pittsburgh, Pennsylvania. Yes, I'm a Pittsburgh Steelers fan, because when you
+            grow up in Pittsburgh in the 70s, it's the law. I'm a graduate of both The Art Institute of Pittsburgh
+            (Associate's Degree) and The Indiana University of Pennsylvania (Bachelor of Fine Arts). In my spare time
+            you can find me teaching myself how to play guitar, doing concert photography or watching professional
+            football on television.</p>
 
-            <p>Fast forward to 2020, when after losing my full-time designer job because of the COVID pandemic, I thought that a career change was in order. It’s intriguing to me that since my time developing interfaces, both User Experience (UX) and User Interface Design (UI) have grown into full-blown career fields of their own. Thanks to CareerFoundry’s UI Immersion boot camp, I’m hoping to combine my creative experience together with the latest UI/UX processes and transition to a User Interface Designer. For me, this transition is the logical "next step" in my career, and in the next paragraph I'll tell you why.</p>
+          <p>I've been a print-based graphic designer most of my career, but several years ago I worked my way into an
+            interface designer position for a company that developed a software package that monitored and controlled
+            satellite communications networks. It was there that I got my first taste of user interface design (more
+            graphics related vs. coding), and I was proud that the work that I did was making a difference for customers
+            as varied as The National Broadcast Company (NBC) and the United States Military. While I did my best and
+            applied everything I knew about graphic design to my work, I was missing one very important piece:
+            understanding the needs of a user.</p>
 
-            <p>Not only do I feel like I have the right background and experience for this field, but I also feel strongly that I have the right personality as well. In recent months, I've taken the personality tests available at <a
-                href="https://www.gallup.com/cliftonstrengths/en/252137/home.aspx" target="_blank">Clifton Strengths</a> and <a href="https://www.16personalities.com" target="_blank">16personalities.com.</a> Here are some of the findings:</p>
+          <p>Fast forward to 2020, when after losing my full-time designer job because of the COVID pandemic, I thought
+            that a career change was in order. It’s intriguing to me that since my time developing interfaces, both User
+            Experience (UX) and User Interface Design (UI) have grown into full-blown career fields of their own. Thanks
+            to CareerFoundry’s UI Immersion boot camp, I’m hoping to combine my creative experience together with the
+            latest UI/UX processes and transition to a User Interface Designer. For me, this transition is the logical
+            "next step" in my career, and in the next paragraph I'll tell you why.</p>
 
-            <p>Key personality traits from Clifton Strengths include:</p>
-            <ol class="listfix">
-              <li><b>Restorative:</b> "...adept at dealing with problems. They are good at figuring out what is wrong and resolving it."</li>
-              <li><b>Empathy:</b> "... can sense other people’s feelings by imagining themselves in others’ lives or situations."</li>
-              <li><b>Arranger:</b> "They like to determine how all of the pieces and resources can be arranged for maximum productivity."</li>
-              <li><b>Adaptability:</b> "They tend to be “now” people who take things as they come and discover the future one day at a time."</li>
-            </ol>
+          <p>Not only do I feel like I have the right background and experience for this field, but I also feel strongly
+            that I have the right personality as well. In recent months, I've taken the personality tests available at
+            <a href="https://www.gallup.com/cliftonstrengths/en/252137/home.aspx" target="_blank">Clifton Strengths</a>
+            and <a href="https://www.16personalities.com" target="_blank">16personalities.com.</a> Here are some of the
+            findings:
+          </p>
 
-            <p>...and from 16 personalities.com, the "Advocate" personality type:</p>
-            <ol class="listfix">
-              <li><b>Creative:</b> "Advocate personalities enjoy finding the perfect solution for the people they care about. To do this, they draw on their vivid imagination and their strong sense of compassion."</li>
-              <li><b>Insightful:</b> "Advocates typically strive to move past appearances and get to the heart of things. This can give them an almost uncanny ability to understand people’s true motivations, feelings, and needs."</li>
-              <li><b>Principled:</b> "People with the Advocate personality type tend to have deeply held beliefs, and their conviction often shines through when they speak or write about subjects that matter to them."</li>
-              <li><b>Passionate:</b> "Advocates can pursue their ideals with a single-mindedness that may catch others off guard. These personalities rarely settle for “good enough,” and their willingness to disrupt the status quo may not please
-                everyone. That said, Advocates’ passion for their chosen cause is a key aspect of their personality."</li>
-              <li><b>Altruistic:</b> "Advocates generally aim to use their strengths for the greater good – they rarely enjoy succeeding at other people’s expense. They tend to think about how their actions affect others, and their goal is to behave
-                in a way that will help the people around them and make the world a better place."</li>
-            </ol>
-            <p>If you've read this far and liked what you heard, then maybe I'm the right guy for your next UI/UX job. Please feel free to reach out via my email address, which is available below in the footer. Thanks very much for your
-              consideration.
-            <p>
+          <p>Key personality traits from Clifton Strengths include:</p>
+          <ol class="listfix">
+            <li><b>Restorative:</b> "...adept at dealing with problems. They are good at figuring out what is wrong and
+              resolving it."</li>
+            <li><b>Empathy:</b> "... can sense other people’s feelings by imagining themselves in others’ lives or
+              situations."</li>
+            <li><b>Arranger:</b> "They like to determine how all of the pieces and resources can be arranged for maximum
+              productivity."</li>
+            <li><b>Adaptability:</b> "They tend to be “now” people who take things as they come and discover the future
+              one day at a time."</li>
+          </ol>
 
-          </div>
-          <!--MyStory Column END-->
-
-          <div><!--Whole Block-->
-            <h2 class="center">Skills & Tools</h2>
-            <div class="rowcenter"><!--Row-->
-              <div class="col-md-6"><!--Column1-->
-                <h3>Relevant Skills</h3>
-                <ul>
-                  <li>UX/UI Design</li>
-                  <li>Frontend Design</li>
-                  <li>Graphic Design</li>
-                  <li>Photography</li>
-                  <li>Videography</li>
-                </ul>
-              </div>
-              <div class="col-md-6"><!--Column2-->
-                <h3>Tools I Use</h3>
-                <ul>
-                  <li>Adobe XD</li>
-                  <li>Figma</li>
-                  <li>Atom Text Editor</li>
-                  <li>Adobe Dreamweaver</li>
-                  <li>InVision</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Adobe Photoshop</li>
-                  <li>Adobe InDesign</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--Skills Column END-->
+          <p>...and from 16 personalities.com, the "Advocate" personality type:</p>
+          <ol class="listfix">
+            <li><b>Creative:</b> "Advocate personalities enjoy finding the perfect solution for the people they care
+              about. To do this, they draw on their vivid imagination and their strong sense of compassion."</li>
+            <li><b>Insightful:</b> "Advocates typically strive to move past appearances and get to the heart of things.
+              This can give them an almost uncanny ability to understand people’s true motivations, feelings, and
+              needs."</li>
+            <li><b>Principled:</b> "People with the Advocate personality type tend to have deeply held beliefs, and
+              their conviction often shines through when they speak or write about subjects that matter to them."</li>
+            <li><b>Passionate:</b> "Advocates can pursue their ideals with a single-mindedness that may catch others off
+              guard. These personalities rarely settle for “good enough,” and their willingness to disrupt the status
+              quo may not please
+              everyone. That said, Advocates’ passion for their chosen cause is a key aspect of their personality."</li>
+            <li><b>Altruistic:</b> "Advocates generally aim to use their strengths for the greater good – they rarely
+              enjoy succeeding at other people’s expense. They tend to think about how their actions affect others, and
+              their goal is to behave
+              in a way that will help the people around them and make the world a better place."</li>
+          </ol>
+          <p>If you've read this far and liked what you heard, then maybe I'm the right guy for your next UI/UX job.
+            Please feel free to reach out via my email address, which is available below in the footer. Thanks very much
+            for your
+            consideration.
+          <p>
 
         </div>
-        <!--MyStory & Skills Container-->
+        <!--MyStory Column END-->
+
+        <div>
+          <!--Whole Block-->
+          <h2 class="skills back-color">Skills & Tools</h2>
+          <div class="rowcenter">
+            <!--Row-->
+            <div class="col-md-6">
+              <!--Column1-->
+              <h3 class="color-gray-one">Relevant Skills</h3>
+              <ul>
+                <li>UX/UI Design</li>
+                <li>Frontend Design</li>
+                <li>Graphic Design</li>
+                <li>Photography</li>
+                <li>Videography</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <!--Column2-->
+              <h3 class="color-gray-one">Tools I Use</h3>
+              <ul>
+                <li>Adobe XD</li>
+                <li>Figma</li>
+                <li>Atom Text Editor</li>
+                <li>Adobe Dreamweaver</li>
+                <li>InVision</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe InDesign</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Skills Column END-->
+
       </div>
-      <!--Container END-->
+      <!--MyStory & Skills Container-->
+    </div>
+    <!--Container END-->
     </div>
     <!--Whole Block END-->
   </main>
@@ -144,38 +178,18 @@
   <footer>
     <div class="center" id="contact">
       <!-- Container -->
-      <div class="container">
-        <h2>Get in Touch</h2>
-        <p>If you have a project in mind that you think I'd be perfect for, then please call me at <a href="tel:4043538569">(404) 353-8569</a> and leave a message. You can also contact me via email.</p>
-        <div class="row">
-          <a href="mailto:michaelbradley.uiux@gmail.com" class="button">Email Me</a>
+      <div class="container color-gray-four">
+        <!--Social Media Layout and Placeholders-->
+        <div class="social">
+          <a href="https://www.linkedin.com/in/michaelbradley1/" target="_blank"><i
+              class="fab fa-linkedin fa-3x"></i></a>
         </div>
-
-        <div>
-          <!--Social Media Layout and Placeholders-->
-          <a href="https://www.linkedin.com/in/michaelbradley1/" target="_blank">
-            <svg class="social" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="g5891">
-                <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
-                <g id="shapes">
-                  <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
-                  <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
-                    style="fill:#fff;fill-rule:nonzero;" />
-                  <path
-                    d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                    id="path15" style="fill:#fff;fill-rule:nonzero;" />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-
-        <p>&copy;Copyright Michael Bradley 2021</p>
+        <p>Copyright &copy; Michael Bradley, 2021</p>
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
